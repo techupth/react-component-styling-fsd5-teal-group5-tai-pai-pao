@@ -1,28 +1,21 @@
 import "./App.css";
-import { Alert } from "./components/Alert.jsx";
-import { Button } from "./components/Button.jsx";
+
+import Button from "./components/Button"
+import {Alert} from "./components/Alert"
+
 function App() {
   return (
     <div className="App">
       <div className="button-components-section">
-        {/* Render ตัว Button 2 แบบ */}
-        <h1>
-          primary <Button type="primary" />
-        </h1>
-        <h1>
-          secondary <Button type="secondary" />
-        </h1>
+        <Button type="primary" text="Primary" />
+        <Button type="secondary" text="Secondary" />
       </div>
       <hr />
       <div className="alert-components-section">
-        {/* Render ตัว Alert 4 แบบ */}
-        <Alert type="a" />
-        <br></br>
-        <Alert type="b" />
-        <br></br>
-        <Alert type="c" />
-        <br></br>
-        <Alert type="d" />
+        <Alert type="error" text="Error Error ErrorError !!!!" />
+        <Alert type="warning" text="warning warning warning!!!!" />
+        <Alert type="info" text="info info info!!!!" />
+        <Alert type="success" text="success success success!!!!" />
       </div>
     </div>
   );
